@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  php:
+    build: php
+    ports:
+      - "4000:80"
+      - "4500:443"
+    volumes:
+      - ./app:/var/www/html
+    links:
+      - db
+
+  db:
+    image: mysql:5.7
+    volumes:
+     - /var/lib/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=admin
+     - MYSQL_DATABASE=dbexample1
+    ports:
+     - "4501:3306"
