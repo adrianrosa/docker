@@ -1,7 +1,7 @@
 # Docker Project<br /><br />
 
 With docker-compose this project creates two containers:<br />
-* Apache-PHP:5.6<br />
+* Apache-PHP:7.0<br />
 * MySQL:5.7<br /><br />
 
 ## Getting Started<br /><br />
